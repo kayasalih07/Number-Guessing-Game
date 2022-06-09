@@ -20,7 +20,7 @@ guess.addEventListener("keydown", (e) => {
 const play = () => {
   let guess = document.getElementById("guess").value;
   if (guess > 0 && guess < 100) {
-    if (right >= 1) {
+    if (right > 1) {
       if (guess > ranNum) {
         right -= 1;
         mesg.innerText = ` ${guess} is too high!`;
@@ -47,7 +47,6 @@ const play = () => {
     } else {
       rightLeft.innerHTML = ` `;
       reStart.style.display = "block";
-      userGuess.style.display = "none";
       label.style.display = "none";
       input.style.display = "none";
       mesg.innerText = `GAME OVER!`;
