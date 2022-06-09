@@ -45,12 +45,13 @@ const play = () => {
         input.style.display = "none";
       }
     } else {
-      rightLeft.innerHTML = ` `;
+      rightLeft.innerHTML = `0 rights left!`;
       reStart.style.display = "block";
       label.style.display = "none";
       input.style.display = "none";
       mesg.innerText = `GAME OVER!`;
       div.style.padding = "1rem";
+      userGuess.style.display = "none";
     }
   } else {
     mesg.innerText = `"Enter a number between 0 and 100`;
